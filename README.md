@@ -1,3 +1,4 @@
+
 # 🤟 Sign to Speech
 
 **A 100% Offline, Real-Time Edge AI Sign Language Translator.**
@@ -68,29 +69,72 @@ This is a monorepo containing both the Flutter application and the Python machin
  ┃ ┗ 📂 static_sign_model/      # CNN training pipeline for alphabet
  ┣ 📂 android/                  # Native Android build files
  ┣ 📂 assets/                   # App assets and exported TFLite models
- ┃ ┣ 📜 dynamic_sign_model.tflite     # Compressed LSTM model for dynamic signs
- ┃ ┗ 📜 static_sign_model.tflite       # Compressed CNN model for static signs
+ ┃ ┣ 📜 dynamic_sign_model.tflite # Compressed LSTM model for dynamic signs
+ ┃ ┗ 📜 static_sign_model.tflite  # Compressed CNN model for static signs
  ┣ 📂 ios/                      # Native iOS build files
  ┣ 📂 lib/                      # Flutter Dart source code
  ┃ ┣ 📂 screens/                # UI Pages (Translate, Dictionary, Study, Profile)
  ┃ ┗ 📜 main.dart               # App entry point
  ┗ 📜 pubspec.yaml              # Flutter dependencies
 
+```
+
+---
+
 ## 🚀 How to Run the Project
 
 We’ve designed this repository to be fully modular. Whether you want to test the raw AI inference on your computer or install the complete mobile ecosystem on your phone, here is how to get started.
 
 ### 🧠 Testing the Live AI Pipeline (Webcam Required)
-If you want to experience our zero-latency sign language translation immediately, you can run our Python edge-inference scripts directly using your computer's webcam.
 
-First, open your terminal to download the project, and navigate directly into the specific model folder you want to test (for example, the static alphabet model):
+If you want to experience our zero-latency sign language translation immediately, you can run our Python edge-inference scripts directly using your computer's webcam. Open your terminal and copy-paste this block to download the project, set up the environment, and launch the UI:
+
 ```bash
+# 1. Download the project and navigate to the static model folder
 git clone [https://github.com/kelvin0812/sign-to-speech.git](https://github.com/kelvin0812/sign-to-speech.git)
-cd sign-to-speech/ai_model/static_sign_model
+cd sign-to-speech/ai_model/static_sign_model or cd sign-to-speech/ai_model/dynamic_sign_model
+
+# 2. Create and activate a Python 3.11 virtual environment (Windows)
 py -3.11 -m venv env
 .\env\Scripts\activate
+
+# 3. Install exact dependencies for skeleton extraction
 pip install tensorflow==2.15.0 mediapipe==0.10.8 protobuf==3.20.3 opencv-python numpy pandas scikit-learn
+
+# 4. Launch the system! Ensure your hands are in the frame.
 python test_model.py
 
-Running the Mobile Ecosystem (Flutter)
+```
+
+---
+
+### 📱 Running the Mobile Ecosystem (Flutter)
+
+To test the full accessibility app—including the visual dictionary, interactive study flashcards, and the offline translation engine—ensure you have the Flutter SDK installed on your system.
+
+Open a fresh terminal in the main project folder and run the following to test it on your device:
+
+```bash
+# 1. Navigate to the main application folder
+cd sign-to-speech
+
+# 2. Download required visual assets and UI packages
+flutter pub get
+
+# 3. Run the app live (ensure a physical phone or emulator is connected)
 flutter run
+
+# NOTE: To compile a standalone offline installer (APK) instead of testing live, 
+# run `flutter build apk --release` instead of `flutter run`.
+
+```
+
+---
+
+---
+
+*Developed for the AI Ready ASEAN Grand National Convening & Innovation Challenge 2026.*
+
+```
+
+```
