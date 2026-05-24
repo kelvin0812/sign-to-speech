@@ -129,12 +129,6 @@ flutter run
 
 ```
 
----
-
----
 
 *Developed for the AI Ready ASEAN Grand National Convening & Innovation Challenge 2026.*
 
-```
-
-```
