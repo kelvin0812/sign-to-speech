@@ -75,3 +75,22 @@ This is a monorepo containing both the Flutter application and the Python machin
  ┃ ┣ 📂 screens/                # UI Pages (Translate, Dictionary, Study, Profile)
  ┃ ┗ 📜 main.dart               # App entry point
  ┗ 📜 pubspec.yaml              # Flutter dependencies
+
+## 🚀 How to Run the Project
+
+We’ve designed this repository to be fully modular. Whether you want to test the raw AI inference on your computer or install the complete mobile ecosystem on your phone, here is how to get started.
+
+### 🧠 Testing the Live AI Pipeline (Webcam Required)
+If you want to experience our zero-latency sign language translation immediately, you can run our Python edge-inference scripts directly using your computer's webcam.
+
+First, open your terminal to download the project, and navigate directly into the specific model folder you want to test (for example, the static alphabet model):
+```bash
+git clone [https://github.com/kelvin0812/sign-to-speech.git](https://github.com/kelvin0812/sign-to-speech.git)
+cd sign-to-speech/ai_model/static_sign_model
+py -3.11 -m venv env
+.\env\Scripts\activate
+pip install tensorflow==2.15.0 mediapipe==0.10.8 protobuf==3.20.3 opencv-python numpy pandas scikit-learn
+python test_model.py
+
+Running the Mobile Ecosystem (Flutter)
+flutter run
