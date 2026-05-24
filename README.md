@@ -1,5 +1,5 @@
 
-# 🤟 Sign to Speech
+# Sign to Speech
 
 **A 100% Offline, Real-Time Edge AI Sign Language Translator.**
 *Official Submission for the AI Ready ASEAN Grand National Convening & Innovation Challenge (GNCIC) 2026 by Team TENRA.*
@@ -11,20 +11,20 @@
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 For millions of individuals across ASEAN, the communication gap between the Deaf community and the hearing world creates massive systemic inequalities in healthcare, education, and public services. Current solutions are often prohibitively expensive or completely break down without a high-speed internet connection. 
 
 **Sign to Speech** breaks the "Silent Barrier" by providing a reliable, instantaneous bridge. We have engineered a dual-engine Artificial Intelligence pipeline compressed into a lightweight mobile ecosystem and dedicated edge computing hardware—requiring absolutely no cloud processing or Wi-Fi.
 
-### 🎯 Key Objectives
+### Key Objectives
 * **100% Offline Inference:** Ensuring absolute data privacy and accessibility in rural clinics and areas with poor infrastructure.
 * **Zero-Latency Translation:** Utilizing edge-optimized models to process dynamic human motion in real-time.
 * **ASEAN Inclusivity:** Multi-language UI localization (e.g., Bahasa Melayu) to cross regional borders.
 
 ---
 
-## 🧠 The AI Architecture (Dual-Engine Pipeline)
+## The AI Architecture 
 
 Standard AI classifiers fail at conversational sign language because it is a fluid language of motion. To solve this, we engineered our own custom data extraction pipeline. 
 
@@ -37,18 +37,18 @@ Both models are compressed into highly optimized TensorFlow Lite (`.tflite`) for
 
 ---
 
-## 📱 The Software Ecosystem
+## The Software Ecosystem
 
 We built a complete accessibility ecosystem deployed via a custom Flutter application:
 
-* 📷 **Translation Page:** Runs live AI inference offline with a strict 85% confidence filter and a Text-to-Speech engine.
-* 📖 **Dictionary Page:** A searchable visual reference guide categorized into greetings, alphabets, and numbers.
-* 🎓 **Study Page:** Gamified interactive flashcards for hearing users to actively learn sign language.
-* ⚙️ **Profile Page:** Tracks user progress (streaks/accuracy) and features deep localization settings for true ASEAN accessibility.
+* **Translation Page:** Runs live AI inference offline with a strict 85% confidence filter and a Text-to-Speech engine.
+* **Dictionary Page:** A searchable visual reference guide categorized into greetings, alphabets, and numbers.
+* **Study Page:** Gamified interactive flashcards for hearing users to actively learn sign language.
+* **Profile Page:** Tracks user progress (streaks/accuracy) and features deep localization settings for true ASEAN accessibility.
 
 ---
 
-## 📟 The Hardware Vision (Edge Computing)
+## The Hardware Vision (Edge Computing)
 
 To make this truly accessible as a public utility, we designed our own standalone hardware to run our AI models.
 
@@ -58,7 +58,7 @@ To make this truly accessible as a public utility, we designed our own standalon
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 This is a monorepo containing both the Flutter application and the Python machine learning training environment.
 
@@ -81,11 +81,11 @@ This is a monorepo containing both the Flutter application and the Python machin
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 We’ve designed this repository to be fully modular. Whether you want to test the raw AI inference on your computer or install the complete mobile ecosystem on your phone, here is how to get started.
 
-### 🧠 Testing the Live AI Pipeline (Webcam Required)
+### Testing the Live AI Pipeline (Webcam Required)
 
 If you want to experience our zero-latency sign language translation immediately, you can run our Python edge-inference scripts directly using your computer's webcam. Open your terminal and copy-paste this block to download the project, set up the environment, and launch the UI:
 
@@ -108,7 +108,7 @@ python test_model.py
 
 ---
 
-### 📱 Running the Mobile Ecosystem (Flutter)
+### Running the Mobile Ecosystem (Flutter)
 
 To test the full accessibility app—including the visual dictionary, interactive study flashcards, and the offline translation engine—ensure you have the Flutter SDK installed on your system.
 
