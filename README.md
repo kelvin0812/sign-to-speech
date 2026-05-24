@@ -15,7 +15,7 @@
 
 For millions of individuals across ASEAN, the communication gap between the Deaf community and the hearing world creates massive systemic inequalities in healthcare, education, and public services. Current solutions are often prohibitively expensive or completely break down without a high-speed internet connection. 
 
-**Sign to Speech** breaks the "Silent Barrier" by providing a reliable, instantaneous bridge. We have engineered a dual-engine Artificial Intelligence pipeline compressed into a lightweight mobile ecosystem and dedicated edge computing hardware—requiring absolutely no cloud processing or Wi-Fi.
+**Sign to Speech** breaks the "Silent Barrier" by providing a reliable, instantaneous bridge. We have engineered a dual-engine Artificial Intelligence pipeline compressed into a lightweight mobile ecosystem and dedicated edge computing hardware,requiring absolutely no cloud processing or Wi-Fi.
 
 ### Key Objectives
 * **100% Offline Inference:** Ensuring absolute data privacy and accessibility in rural clinics and areas with poor infrastructure.
